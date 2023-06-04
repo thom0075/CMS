@@ -28,21 +28,30 @@
                 $stmt->execute(array($email));
                 $result = $stmt->fetchAll();
 
-                $hash = $result[0]["password"];
+                if(sizeof($result) >=1){
+                    $hash = $result[0]["password"];
 
-                var_dump($result);
-                //NOTE: result is a bi-dimensional array
-                echo $result[0]["password"];
-                //echo gettype($result);
-                //echo sizeof($result); 
-                
-                if(password_verify($password, $hash)){
-                    echo "Signed in, Welcome!";
+                    var_dump($result);
+                    //NOTE: result is a bi-dimensional array
+                    echo $result[0]["password"];
+                    //echo gettype($result);
+                    //echo sizeof($result); 
+                    
+                    if(password_verify($password, $hash)){
+                        echo "Signed in, Welcome!";
+                    }
+                    else{
+                        echo "Username or password problem, try again later";
+                    }
                 }
                 else{
-                    echo "Username or password problem, try again later";
+                    print<<<HERE
+                    <h2>Login Failed, return <a href="/sito/login.php">back</a></h2>
+HERE;
                 }
-            }
+
+                }
+
             //print<<<HERE
             //<h2><p>Email: $email</p></h2><hr><h2>Password hash: $password</h2>
 //HERE;
