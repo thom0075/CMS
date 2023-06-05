@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Authentication</title>
-        <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
-        <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
-    </head>
-    <body>
         <?php
             $email = filter_input(INPUT_POST,"email");
             $password = filter_input(INPUT_POST, "password");
@@ -31,31 +23,27 @@
                 if(sizeof($result) >=1){
                     $hash = $result[0]["password"];
 
-                    var_dump($result);
+                    //var_dump($result);
                     //NOTE: result is a bi-dimensional array
-                    echo $result[0]["password"];
-                    //echo gettype($result);
-                    //echo sizeof($result); 
+                    //echo $result[0]["password"];
                     
                     if(password_verify($password, $hash)){
-                        echo "Signed in, Welcome!";
+                        header("Location: /sito/generic.php");
+                        //echo "Signed in, Welcome!";
                     }
                     else{
-                        echo "Username or password problem, try again later";
+                        header("HTTP/1.1 404 not Found");
+                        //echo "Username or password problem, try again later";
                     }
                 }
                 else{
-                    print<<<HERE
-                    <h2>Login Failed, return <a href="/sito/login.php">back</a></h2>
-HERE;
-                }
-
+                    header("Location: /sito/login.php");
                 }
 
             //print<<<HERE
             //<h2><p>Email: $email</p></h2><hr><h2>Password hash: $password</h2>
 //HERE;
             //echo $GLOBALS["password"];
+            }
         ?>
-</body>
-</html>
+            
