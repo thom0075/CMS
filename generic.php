@@ -3,9 +3,14 @@
     <head>
         <title>Bootstrap index</title>
         <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/jquery/jquery-3.7.0.min"></script>
         <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     </head>
 	<body>
+	<script type="text/javascript">
+		
+	</script>
+
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 			<!--Website brand-->
@@ -26,11 +31,11 @@
 						Dropdown link
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a><h5 class="dropdown-header">Topics</h5></a>
-						<a class="dropdown-item" href="#">one</a>
-						<a class="dropdown-item" href="#">two</a>
-						<a class="dropdown-item" href="#">three</a>
-						<a class="dropdown-item" href="#">four</a>
+						<a><h5 class="dropdown-header">Topicms</h5></a>
+						<a class="dropdown-item" href="#" nae="one" action="reqPage.php">one</a>
+						<a class="dropdown-item" href="#" name="two">two</a>
+						<a class="dropdown-item" href="#" name="three">three</a>
+						<a class="dropdown-item" href="#" name="four">four</a>
 					</div>
 				</div>
 				</div>
