@@ -28,7 +28,7 @@
                     //echo $result[0]["password"];
                     
                     if(password_verify($password, $hash)){
-                        header("Location: /sito/generic.php");
+                        header("Location: /sito/new_block.php");
                         //echo "Signed in, Welcome!";
                     }
                     else{
