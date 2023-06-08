@@ -7,8 +7,16 @@
         <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     </head>
 	<body>
+		<div id="start"></div>
 	<script type="text/javascript">
-		
+		$(init);
+		function init(){
+			$.get("reqPage.php", {"one":"Index"}, processResult);
+		}
+
+		function processResult(data, textStatus){
+			$("#start").html(data);
+		}
 	</script>
 
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,8 +39,8 @@
 						Dropdown link
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a><h5 class="dropdown-header">Topicms</h5></a>
-						<a class="dropdown-item" href="#" nae="one" action="reqPage.php">one</a>
+						<a><h5 class="dropdown-header">Topics</h5></a>
+						<a class="dropdown-item" href="reqPage.php?one=PHP&web=school.com" name="one">one</a>
 						<a class="dropdown-item" href="#" name="two">two</a>
 						<a class="dropdown-item" href="#" name="three">three</a>
 						<a class="dropdown-item" href="#" name="four">four</a>
