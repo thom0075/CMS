@@ -8,27 +8,16 @@
     </head>
 	<body>
 		<div id="start"></div>
-	<script type="text/javascript">
-		$(init);
-		function init(){
-			$.get("reqPage.php", {"one":"Index"}, processResult);
-		}
-
-		function processResult(data, textStatus){
-			$("#start").html(data);
-		}
-	</script>
-
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 			<!--Website brand-->
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="#">Thom075</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<div class="navbar-nav">
-				<a class="nav-item nav-link active" href="#">Home</a>
+				<a class="nav-item nav-link active" href="/sito/generic.php">Home</a>
 				<a class="nav-item nav-link" href="#">C++</a>
 				<a class="nav-item nav-link" href="#">Python</a>
 				<a class="nav-item nav-link" href="#">HTML5</a>
@@ -42,8 +31,8 @@
 						<a><h5 class="dropdown-header">Topics</h5></a>
 						<a class="dropdown-item" href="reqPage.php?page=test_title" name="one">one</a>
 						<a class="dropdown-item" href="reqPage.php?page=youtubeChannel" name="two">two</a>
-						<a class="dropdown-item" href="reqPage.php?page=three" name="three">three</a>
-						<a class="dropdown-item" href="reqPage.php?page=four" name="four">four</a>
+						<a class="dropdown-item" href="reqPage.php?page=My+Videos" name="three">three</a>
+						<a class="dropdown-item" href="reqPage.php?page=Content" name="four">four</a>
 					</div>
 				</div>
 				</div>

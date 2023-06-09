@@ -53,11 +53,11 @@ print<<<HERE
 						Dropdown link
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a><h5 class="dropdown-header">Topics</h5></a>
-						<a class="dropdown-item" href="reqPage.php?page=test_title" name="one">one</a>
-						<a class="dropdown-item" href="reqPage.php?page=two" name="two">two</a>
-						<a class="dropdown-item" href="reqPage.php?page=three" name="three">three</a>
-						<a class="dropdown-item" href="reqPage.php?page=four" name="four">four</a>
+					<a><h5 class="dropdown-header">Topics</h5></a>
+					<a class="dropdown-item" href="reqPage.php?page=test_title" name="one">one</a>
+					<a class="dropdown-item" href="reqPage.php?page=youtubeChannel" name="two">two</a>
+					<a class="dropdown-item" href="reqPage.php?page=My+Videos" name="three">three</a>
+					<a class="dropdown-item" href="reqPage.php?page=Content" name="four">four</a>
 					</div>
 				</div>
 				</div>
