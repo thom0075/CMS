@@ -6,7 +6,7 @@ if($title = filter_input(INPUT_GET,"one")){
 */
 if($_GET['page']){
     $title = $_GET['page'];
-    echo $_GET['page'];
+    //echo $_GET['page'];
 }
 
 //echo $_GET['web'];
