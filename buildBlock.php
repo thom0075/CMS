@@ -21,7 +21,7 @@
             $result_pageName = $stmt_pageName->execute(array($pageName));
         }
         else{
-            if($password == "thom0075"){
+            if($password == ""){
                 manageResults();
             }
             else{
