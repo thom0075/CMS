@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap index</title>
+        <title>Site login</title>
         <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
         <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css">
     </head>
@@ -32,7 +32,8 @@
                 <div class="col">
 
                 </div>
-            </div>
+            </div> 
         </div>
 </body>
 </html>
+
